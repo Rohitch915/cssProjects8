@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body{
+  display:flex;
+  gap:20px;
+  position: relative;
+}
+.header{
+  position: sticky;
+  border:1px solid #ccc;
+  top:0px;
+  height: 100vh;
+}
+nav h1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+nav ul li{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  
+}
+nav ul li:hover{
+  cursor: pointer;
+  background-color: #ebebeb;
+  transition: 0.3s ease-in-out;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul a {
+  text-decoration: none;
+  color:black;
+}
+.main{
+  min-height: 100vh;
+  padding: 50px;
+ 
+}
+section{
+  margin-bottom: 50px;
+  scroll-margin: 50px;
+}
+section h2{
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+section article{
+  margin-left: 10px;
+}
+section code{
+  display: block;
+  background-color: #f7f7f7;;
+  margin-left: 10px;
+  text-align: left;
+  padding: 15px;
+  line-height: 2;
+  font-size: 15px;
+  white-space: pre-line;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+section p{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+section ul{
+  margin-left: 20px;
+}
+section ul li{
+ margin-bottom: 20px;
+}
+
+@media screen and (max-width:600px)
+{
+  .header{
+    background-color: white;
+    height: 150px;
+    height: 166px;
+    position: fixed;
+    z-index: 10;
+  }
+  nav h1{
+    text-align: center;
+    width:100%;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    width:100%;
+  }
+  nav ul li{
+    padding: 10px;
+    padding-top:10px;
+    border-bottom: 0px;
+    border-right: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+    list-style-type: none;
+    font-size: 13px;
+    height: 110px;
+    width:100%;
+  }
+  body{
+    flex-direction: column;
+  }
+  .main{
+    position: absolute;
+    top:150px;
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
